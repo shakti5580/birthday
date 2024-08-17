@@ -6,7 +6,7 @@
     <title>Happy Birthday!</title>
     <style>
         body {
-            background-color: #2C2C2C; /* Matte black color */
+            background-color: black;
             color: lightpink;
             font-family: 'Arial', sans-serif;
             display: flex;
@@ -28,18 +28,32 @@
         p {
             font-size: 1.5em;
         }
+        button {
+            background-color: lightpink;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e699b8;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Happy Birthday!</h1>
-        <p>Press any key to see something special!</p>
+        <p>Press the button to see something special!</p>
+        <button onclick="redirect()">Press Me</button>
     </div>
 
     <script>
-        document.addEventListener('keydown', function() {
+        function redirect() {
             window.location.href = "video.html"; // Replace with your desired URL
-        });
+        }
     </script>
 </body>
 </html>
